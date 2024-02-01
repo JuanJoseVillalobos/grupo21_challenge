@@ -3,6 +3,7 @@ import React from "react";
 function Profesiones() {
 	return (
 		<>
+		
 			<section class="content profesiones">
 				<h2 class="mt-3">Profesiones</h2>
 				<div class="list-group shadow-sm p-3 mb-5 rounded">

@@ -1,8 +1,8 @@
 import '../assets/css/App.css'
-import NavBar from './navBar'
-import Inicio from './inicio'
-import Tarjeta from './tarjeta'
-import Profesiones from './profesiones'
+import NavBar from './NavBar'
+import Inicio from './Inicio'
+import Tarjeta from './Tarjeta'
+import Profesiones from './Profesiones'
 
 function Centro() {
   return (
