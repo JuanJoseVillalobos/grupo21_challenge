@@ -1,5 +1,4 @@
 import '../assets/css/App.css'
-import NavBar from './NavBar'
 import Inicio from './Inicio'
 import Tarjeta from './Tarjeta'
 import Profesiones from './Profesiones'
@@ -7,12 +6,11 @@ import Profesiones from './Profesiones'
 function Centro() {
   return (
     <>
-      <div>
-        <NavBar/>
+        <main class="content-wrap">
         <Inicio/>
         <Tarjeta/>
         <Profesiones/>
-      </div>
+        </main>
     </>
   )
 }

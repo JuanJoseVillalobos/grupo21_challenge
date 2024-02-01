@@ -1,8 +1,10 @@
 import React from 'react';
+import '../assets/css/style.css'
 
 function CajaCostado() {
 	return (
-		<div>
+		<>
+		  <div class="dashboard">
 			<header class="menu-wrap">
 				<figure class="user">
 					<div class="user-avatar">
@@ -50,7 +52,8 @@ function CajaCostado() {
 					</section>
 				</nav>
 			</header>
-		</div>
+			</div>
+		</>
 	);
 };
 
