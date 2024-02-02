@@ -6,11 +6,9 @@ import Profesiones from './Profesiones'
 function Centro() {
   return (
     <>
-        <main class="content-wrap">
         <Inicio/>
         <Tarjeta/>
         <Profesiones/>
-        </main>
     </>
   )
 }

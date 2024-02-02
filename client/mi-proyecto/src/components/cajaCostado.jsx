@@ -4,10 +4,9 @@ import '../assets/css/style.css'
 function CajaCostado() {
 	return (
 		<>
-		  <div class="dashboard">
-			<header class="menu-wrap">
-				<figure class="user">
-					<div class="user-avatar">
+			<header className="menu-wrap">
+				<figure className="user">
+					<div className="user-avatar">
 						<img src="./src/assets/images/logo-dh.png" alt="Logo Digital House	" />
 					</div>
 					<figcaption>
@@ -15,36 +14,36 @@ function CajaCostado() {
 					</figcaption>
 				</figure>
 				<nav>
-					<section class="menu">
+					<section className="menu">
 						<h3>Opciones</h3>
 						<ul>
 							<li>
 								<a href="#">
-									<i class="bi bi-building" style="font-size: 1.2rem; color: cornflowerblue;"></i>
+									<i className="bi bi-building" style="font-size: 1.2rem; color: cornflowerblue;"/>
 									- Empresas
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="bi bi-person" style="font-size: 1.2rem; color: cornflowerblue;"></i>
+									<i className="bi bi-person" style="font-size: 1.2rem; color: cornflowerblue;"/>
 									- Aspirantes
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="bi bi-list-check"></i>
+									<i className="bi bi-list-check"/>
 									- Profesiones
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="bi bi-person-vcard" style="font-size: 1.2rem; color: cornflowerblue;"></i>
+									<i className="bi bi-person-vcard" style="font-size: 1.2rem; color: cornflowerblue;"/>
 									- Postulate aquí
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i class="bi bi-chat-left-text"></i>
+									<i className="bi bi-chat-left-text"/>
 									- Contacto
 								</a>
 							</li>
@@ -52,7 +51,6 @@ function CajaCostado() {
 					</section>
 				</nav>
 			</header>
-			</div>
 		</>
 	);
 };

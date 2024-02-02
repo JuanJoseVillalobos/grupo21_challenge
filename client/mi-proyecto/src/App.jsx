@@ -1,14 +1,19 @@
 import './assets/css/App.css'
 import Centro from './components/Centro'
 import CajaCostado from './components/CajaCostado'
+import Inicio from './components/Inicio'
+import Prueba from './components/prueba'
 
 function App() {
   return (
     <>
-    <CajaCostado/>
+      <div class="dashboard">
+        <Prueba />
         <main class="content-wrap">
-        </main>
 
+          <Centro />
+        </main>
+      </div>
     </>
   )
 }
