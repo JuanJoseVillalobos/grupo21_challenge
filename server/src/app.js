@@ -3,10 +3,8 @@ const app = express();
 
 const PORT = 3030;
 
-const home = require('./routes/home');
+const api = require('./routes/api');
 
-app.set("views", "../../client/mi-proyecto/views");
-
-app.use(home);
+app.use(api);
 
 app.listen(PORT, console.log(`Servidor iniciado en el puerto ${PORT}`));
