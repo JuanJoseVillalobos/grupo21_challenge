@@ -1,17 +1,15 @@
-// const db = require('../../database/models');
+const db = require('../../db/models');
 
 const controller = {
     api: (req, res) => {
-        // db.Aspirantes.findAll()
-        //     .then(aspirantes => {
-        //         res.json({
-        //             data: aspirantes
-        //         });
-        //     })
-
-        res.json({
-            data: 'aspirantes'
+        db.Aspirante.findAll({
+            include: [{ model: db.Profesion, as: "profesion", attributes: ['profesion']}] 
         })
+             .then(aspirantes => {
+                 res.json({
+                     data: aspirantes
+                 });
+             })
     }
 };
 
