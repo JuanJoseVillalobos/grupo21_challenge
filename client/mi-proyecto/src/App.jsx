@@ -12,7 +12,7 @@ function App() {
       <div className="dashboard">
         <main className="content-wrap">
           <Centro/>
-        </main>
+        </main> 
       </div>
     </>
   )
