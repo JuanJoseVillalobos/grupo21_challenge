@@ -19,13 +19,13 @@ function CajaCostado() {
 						<ul>
 							<li>
 								<a href="#">
-									<i className="bi bi-building" style="font-size: 1.2rem; color: cornflowerblue;"/>
+									<i className="bi bi-building" />
 									- Empresas
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<i className="bi bi-person" style="font-size: 1.2rem; color: cornflowerblue;"/>
+									<i className="bi bi-person" />
 									- Aspirantes
 								</a>
 							</li>
@@ -37,7 +37,7 @@ function CajaCostado() {
 							</li>
 							<li>
 								<a href="#">
-									<i className="bi bi-person-vcard" style="font-size: 1.2rem; color: cornflowerblue;"/>
+									<i className="bi bi-person-vcard"/>
 									- Postulate aquí
 								</a>
 							</li>

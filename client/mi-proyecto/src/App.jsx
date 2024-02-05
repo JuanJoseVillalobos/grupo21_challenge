@@ -1,8 +1,6 @@
 import './assets/css/App.css'
 import Centro from './components/Centro'
 import CajaCostado from './components/CajaCostado'
-import Inicio from './components/Inicio'
-import Prueba from './components/prueba'
 import NavBar from './components/NavBar'
 
 function App() {
@@ -10,6 +8,8 @@ function App() {
     <>
       
       <div className="dashboard">
+        <NavBar/>
+        <CajaCostado/>
         <main className="content-wrap">
           <Centro/>
         </main> 
