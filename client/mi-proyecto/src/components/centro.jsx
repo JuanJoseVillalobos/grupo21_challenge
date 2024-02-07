@@ -7,10 +7,12 @@ import Profesiones from './Profesiones'
 function Centro() {
   return (
     <>
-    
-        <Inicio/>
-        <Tarjeta/>
-        
+      <main className="content-wrap">
+        <Inicio />
+        <Tarjeta />
+      </main>
+
+
     </>
   )
 }
