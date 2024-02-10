@@ -3,12 +3,16 @@ import Inicio from './Inicio'
 import Tarjeta from './Tarjeta'
 import Profesiones from './Profesiones'
 
+
 function Centro() {
   return (
     <>
-        <Inicio/>
-        <Tarjeta/>
-        <Profesiones/>
+      <main className="content-wrap">
+        <Inicio />
+        <Tarjeta />
+      </main>
+
+
     </>
   )
 }
