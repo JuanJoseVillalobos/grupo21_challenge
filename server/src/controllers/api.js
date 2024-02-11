@@ -2,8 +2,8 @@ const db = require('../../db/models');
 
 const controller = {
     aspirants: (req, res) => {
-        db.Aspirante.findAll({
-            include: [{ model: db.Profesion, as: "profesion", attributes: ['profesion']}] 
+        db.Candidate.findAll({
+            include: [{ model: db.Profession, as: "profession", attributes: ['name']}] 
         })
              .then(aspirantes => {
                  res.json({
@@ -12,7 +12,7 @@ const controller = {
              })
     },
     profesion: (req,res)=>{
-        db.Profesion.findAll()
+        db.Profession.findAll()
         .then((profesions)=>{
             res.json({
                 data:profesions
