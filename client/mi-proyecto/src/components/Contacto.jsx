@@ -2,7 +2,11 @@ import React from "react";
 
 function Contacto(){
     return(
-        <h1>El contacto de todos (?)</h1>
+        <header className="preventa">
+            <p className="text-center h5">El contacto de todos (?)</p>
+            <div>
+            </div>
+        </header>
     )
 }
 
