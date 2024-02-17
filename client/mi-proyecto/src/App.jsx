@@ -1,16 +1,22 @@
 import { useState, useEffect } from "react";
 
+import Todo from './components/Todo'
+
 function App() {
-  const [data, setData] = useState(null)
-  useEffect(()=>{
-    fetch('http://localhost:3030/api/profesiones')
-    .then((response)=>{response.json()})
-    .then((data)=>setData(data))
-  }, [])
-  console.log(data)
+const [aspirantes, setAspirantes] = useState();
+
+  useEffect(() => {
+    fetch("http://localhost:3030/api/aspirantes")
+      .then((response) => response.json())
+      .then((data) => 
+      setAspirantes(data.data),
+      );
+  }, []);
+      console.log(aspirantes)
+
   return (
     <>
-    <div>{data}</div>
+    <h1>{aspirantes[0].email}</h1>
     </>
   )
 }
