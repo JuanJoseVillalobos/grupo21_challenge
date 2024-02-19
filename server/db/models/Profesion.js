@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     let alias = "Profesion"
     let cols = {
-        id: {type: DataTypes.INTEGER, primaryKey: true},
+        id: { type: DataTypes.INTEGER, primaryKey: true },
         profesion: DataTypes.STRING
     }
     let config = {
