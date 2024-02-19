@@ -20,6 +20,8 @@ function Profesiones() {
 					<button type="button" className="list-group-item list-group-item-action text-center">Técnico de sonido</button>
 					<button type="button" className="list-group-item list-group-item-action text-center">Profesor</button>
 					<button type="button" className="list-group-item list-group-item-action text-center">Linguista</button>
+					<button type="button" className="list-group-item list-group-item-action text-center">Estudiante</button>
+
 				</div>
 			</section>
 		</>

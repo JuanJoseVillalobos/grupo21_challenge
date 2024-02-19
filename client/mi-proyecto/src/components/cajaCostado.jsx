@@ -1,9 +1,8 @@
 import React from 'react';
-import '../assets/css/style.css'
+import '../assets/css/cajacostado.css'
 
-import { Link , Route} from 'react-router-dom';
-import Tarjeta from './Tarjeta';
-import Profesiones from './Profesiones';
+import { Link } from 'react-router-dom';
+
 
 function CajaCostado() {
 	return (
@@ -64,8 +63,7 @@ function CajaCostado() {
 
 				
 
-			</header>
-			
+			</header>			
 			
 		</>
 	);
