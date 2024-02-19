@@ -1,16 +1,15 @@
 import '../assets/css/Todo.css'
+import { Routes, Route } from 'react-router-dom'
 
-import Centro from './Centro'
 import CajaCostado from './CajaCostado'
 import NavBar from './NavBar'
+import Centro from './Centro'
 
 import Empresas from './Empresas'
-import Tarjeta from './Tarjeta'
+import PropsAspirantes from './PropsAspirantes'
 import Profesiones from './Profesiones'
 import Postulate from './Postulate'
-import Contacto from './Contacto'
-
-import { Routes, Route } from 'react-router-dom'
+import PropsContacto from './PropsContacto'
 
 function Todo() {
   return (
@@ -23,10 +22,10 @@ function Todo() {
         <Routes>
           <Route path='/' element={<Centro />} />
           <Route path='/empresas' element={<Empresas />} />
-          <Route path='/aspirantes' element={<Tarjeta/>} />
+          <Route path='/aspirantes' element={<PropsAspirantes/>} />
           <Route path='/profesiones' element={<Profesiones />} />
           <Route path='/postulate' element={<Postulate />} />
-          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/contacto' element={<PropsContacto />} />
 
         </Routes>
       </div>

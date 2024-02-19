@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Postulate() {
+
+    const [search, setSearch] = useState();
+
+
+
     return (
-        <header className="preventa">
-            <p className="text-center h5">Encontramos talento para tu empresa, en todos los cargos administrativos, profesionales y técnicos.Calculo que habrá que hacer un componente para agregar datos, no sé</p>
-            <div>
-            </div>
-        </header>
+        <>
+            <form onSubmit={ev => {
+                ev.preventDefault()
+                setSearch(ev.target.search.value)
+            }}>
+
+                <section className="content profesiones">
+                    <h2 className="mt-3">Postulate acá</h2>
+                    <div className="list-group shadow-sm p-3 mb-5 rounded">
+                        <input type="text" name='search' autoComplete="off"></input>
+                        <button type="submit">Buscar</button>
+                        <p>Resultados para: {search}</p>
+                    </div>
+                </section>
+            </form>
+        </>
     )
 }
 

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import Tarjeta from "./Tarjeta";
 
-function propsTarjeta() {
+function PropsAspirantes() {
     const [aspirantes, setAspirantes] = useState(0);
 
     useEffect(() => {
@@ -13,12 +13,7 @@ function propsTarjeta() {
             );
     }, []);
 
-    const data = [
-        { id: 1, name: "John Doe" },
-        { id: 2, name: "Victor Wayne" },
-        { id: 3, name: "Jane Doe" },
-    ];
-
+    console.log(aspirantes)
 
     return (
         <>
@@ -27,10 +22,12 @@ function propsTarjeta() {
                     <h2>Aspirantes</h2>
                     <article className="person-boxes">
 
-                        {data.map((user)=>(
-                            <Tarjeta key={user.id} nombre={user.name}/>
+                        {aspirantes && aspirantes.map((aspirante)=>(
+                        <Tarjeta key={JSON.stringify(aspirante.dni)} nombre={JSON.stringify(aspirante.name)} profesion={JSON.stringify(aspirante.profession.name)} />
                         ))}
-                        
+
+
+
                     </article>
                 </section>
             </main>
@@ -38,4 +35,4 @@ function propsTarjeta() {
     )
 }
 
-export default propsTarjeta
+export default PropsAspirantes

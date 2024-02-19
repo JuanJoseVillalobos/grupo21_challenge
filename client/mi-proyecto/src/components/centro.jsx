@@ -10,7 +10,6 @@ function Centro() {
     <>
       <main className="content-wrap">
         <Inicio />
-        <Tarjeta />
       </main>
     </>
   )
