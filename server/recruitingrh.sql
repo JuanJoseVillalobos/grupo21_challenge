@@ -44,7 +44,7 @@ INSERT INTO `professions` (`id`, `name`, `created_at`, `updated_at`, `deleted_at
 (9, 'estudiante', '2024-02-19 21:41:59', '2024-02-19 21:41:59', NULL);
 
 INSERT INTO `candidates` (`id`, `dni`, `name`, `surname`, `email`, `phoneNumber`, `linkedin`, `birthdate`, `gender`, `image`, `professionId`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 46934967, 'Juan', 'Villalobos', 'juanjosevillalobos.19@gmail.com', '3884091630', 'https://www.linkedin.com/in/juan-jos%C3%A9-villalobos-b98741265/', '2006-03-19', 'male', NULL, 9, '2024-02-11 03:57:59', '2024-02-19 21:42:18', NULL),
-(2, 43698776, 'Francisco Javier', 'Paredes', 'franpa619@gmail.com', '3883330889', 'https://www.linkedin.com/in/francisco-paredes-354a2b26b/', '2001-10-15', 'male', NULL, 9, '2024-02-11 04:02:32', '2024-02-19 21:42:25', NULL),
-(3, 48016788, 'Giuliana Nahir', 'Bazzi', 'zulemanahir13@gmail.com', '3888573604', NULL, '2007-05-07', 'female', NULL, 9, '2024-02-11 04:03:49', '2024-02-19 21:42:30', NULL),
-(4, 47439466, 'Lucía Aymé', 'Andrade', 'aymeandrade2006@gmail.com', '3884707993', 'https://www.linkedin.com/in/luc%C3%ADa-aym%C3%A9-andrade-698b382b2/', '2006-09-19', 'female', NULL, 9, '2024-02-11 04:05:38', '2024-02-19 21:42:35', NULL);
+(1, 46934967, 'Juan', 'Villalobos', 'juanjosevillalobos.19@gmail.com', '3884091630', 'https://www.linkedin.com/in/juan-jos%C3%A9-villalobos-b98741265/', '2006-03-19', 'male', NULL, 9, '2024-02-11 06:57:59', '2024-02-20 00:42:18', NULL),
+(2, 43698776, 'Francisco Javier', 'Paredes', 'franpa619@gmail.com', '3883330889', 'https://www.linkedin.com/in/francisco-paredes-354a2b26b/', '2001-10-15', 'male', NULL, 9, '2024-02-11 07:02:32', '2024-02-20 00:42:25', NULL),
+(3, 48016788, 'Giuliana Nahir', 'Bazzi', 'zulemanahir13@gmail.com', '3888573604', 'www.linkedin.com/in/giuliana-nahir-bazzi-681b86205', '2007-05-07', 'female', NULL, 9, '2024-02-11 07:03:49', '2024-02-19 21:51:58', NULL),
+(4, 47439466, 'Lucía Aymé', 'Andrade', 'aymeandrade2006@gmail.com', '3884707993', 'https://www.linkedin.com/in/luc%C3%ADa-aym%C3%A9-andrade-698b382b2/', '2006-09-19', 'female', NULL, 9, '2024-02-11 07:05:38', '2024-02-20 00:42:35', NULL);
