@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import Contacto from "./Contacto";
+import Empresas from "./Empresas";
 
-function PropsContacto() {
+function PropsEmpresas() {
     const [aspirantes, setAspirantes] = useState(0);
 
     useEffect(() => {
@@ -19,11 +19,11 @@ function PropsContacto() {
         <>
             <main className="content-wrap">
                 <section className="content aspirantes">
-                    <h2>Contactanos</h2>
+                    <h2>Url´s de linkedin</h2>
                     <article className="person-boxes">
 
                         {aspirantes && aspirantes.map((aspirante)=>(
-                        <Contacto key={JSON.stringify(aspirante.dni)} nombre={JSON.stringify(aspirante.name)} numero={JSON.stringify(aspirante.phoneNumber)} />
+                        <Empresas key={JSON.stringify(aspirante.dni)} nombre={JSON.stringify(aspirante.name)} linkedin={JSON.stringify(aspirante.linkedin)} />
                         ))}
 
 
@@ -35,4 +35,4 @@ function PropsContacto() {
     )
 }
 
-export default PropsContacto
+export default PropsEmpresas

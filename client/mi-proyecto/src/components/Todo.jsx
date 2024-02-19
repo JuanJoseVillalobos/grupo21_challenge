@@ -5,7 +5,7 @@ import CajaCostado from './CajaCostado'
 import NavBar from './NavBar'
 import Centro from './Centro'
 
-import Empresas from './Empresas'
+import PropsEmpresas from './PropsEmpresas'
 import PropsAspirantes from './PropsAspirantes'
 import Profesiones from './Profesiones'
 import Postulate from './Postulate'
@@ -21,7 +21,7 @@ function Todo() {
 
         <Routes>
           <Route path='/' element={<Centro />} />
-          <Route path='/empresas' element={<Empresas />} />
+          <Route path='/empresas' element={<PropsEmpresas />} />
           <Route path='/aspirantes' element={<PropsAspirantes/>} />
           <Route path='/profesiones' element={<Profesiones />} />
           <Route path='/postulate' element={<Postulate />} />
