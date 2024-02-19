@@ -23,7 +23,7 @@ function Todo() {
         <Routes>
           <Route path='/' element={<Centro />} />
           <Route path='/empresas' element={<Empresas />} />
-          <Route path='/aspirantes' element={<Tarjeta />} />
+          <Route path='/aspirantes' element={<Tarjeta/>} />
           <Route path='/profesiones' element={<Profesiones />} />
           <Route path='/postulate' element={<Postulate />} />
           <Route path='/contacto' element={<Contacto />} />

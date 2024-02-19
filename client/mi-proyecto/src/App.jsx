@@ -1,22 +1,13 @@
-import { useState, useEffect } from "react";
-
 import Todo from './components/Todo'
+import React from 'react';
+
+import TodosLosAspirantes from "./components/TodosLosAspirantes";
+import Tarjeta from './components/Tarjeta';
 
 function App() {
-const [aspirantes, setAspirantes] = useState();
-
-  useEffect(() => {
-    fetch("http://localhost:3030/api/aspirantes")
-      .then((response) => response.json())
-      .then((data) => 
-      setAspirantes(data.data),
-      );
-  }, []);
-      console.log(aspirantes)
-
   return (
     <>
-    <h1>{aspirantes[0].email}</h1>
+      <TodosLosAspirantes/>
     </>
   )
 }
