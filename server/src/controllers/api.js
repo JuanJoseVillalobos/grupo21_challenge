@@ -11,6 +11,14 @@ const controller = {
                 });
             })
     }
+    ,
+    profe: (req, res) => {
+        db.Profesion.findAll().then(profesion => {
+            res.json({
+                data: profesion
+            })
+        })
+    }
 };
 
 module.exports = controller;

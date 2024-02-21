@@ -8,5 +8,5 @@ router.use(cors());
 
 // Definición de tus rutas
 router.get('/api/aspirantes', apiController.api);
-
+router.get('/api/profesiones', apiController.profe);
 module.exports = router;
