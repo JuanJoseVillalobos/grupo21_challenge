@@ -8,6 +8,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import fotoJose from "/imgUsers/foto5.jpg"
 import fotoFran from "/imgUsers/foto6.jpg"
+import fotoGiuli from "/imgUsers/foto4.jpg"
+import fotoAylu from "/imgUsers/foto1.jpg"
 import { Button, CardActionArea, CardActions, ButtonGroup, Box } from '@mui/material';
 
 export default function MultiActionAreaCard({ profesion, nombre, apellido, index }) {
@@ -16,18 +18,22 @@ export default function MultiActionAreaCard({ profesion, nombre, apellido, index
         <Button key="two"><FiMessageCircle /></Button>,
         <Button key="three"><MdOutlineMail /></Button>,
     ];
-    const fotos = [fotoFran, fotoJose];
+    const fotos = [fotoFran, fotoAylu, fotoGiuli, fotoJose];
     console.log(profesion, nombre, apellido, "estos son nombres y apelkidps");
     return (
-        <div className='w-full p-2  flex flex-col justify-center items-center md:w-3/12 md:shadow-xs'>
+        <div className='w-full p-2  flex flex-col justify-center items-center md:w-1/3 '>
 
 
             <Card sx={{
-                width: "90%",
+                width: "75%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
+                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
+                '@media (min-width: 600px)': {
+                    width: "70%"
+                }
             }}>
                 <CardActionArea
                     sx={{
@@ -39,7 +45,7 @@ export default function MultiActionAreaCard({ profesion, nombre, apellido, index
                     }}>
 
 
-                    <img className='w-1/2 md:w-full' src={fotos[index]} alt={fotos[index]} />
+                    <img className='w-full md:w-full' src={fotos[index]} alt={fotos[index]} />
 
                     <CardContent>
                         <Typography

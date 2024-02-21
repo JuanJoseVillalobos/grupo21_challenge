@@ -3,6 +3,7 @@ import axios from "axios"
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Main/Home'
 import Empresa from './components/Empresas/Empresa'
+
 import Profesiones from './components/Profesiones/Profesiones'
 import Aspirantes from './components/Aspirantes/Aspirantes'
 import Postularse from './components/Postularse/Postularse'
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className='flex w-full'>
       <Navbar></Navbar>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/empresas' element={<Empresa />} />
@@ -43,21 +45,21 @@ function App() {
         <Route path='/postularse' element={<Postularse />} />
         <Route path='/contacto' element={<Contacto />} />
       </Routes>
-      {/* <div>
-      {profesiones && profesiones.length > 0 && profesiones.map((profesion) => {
-          return (
-            <p className='text-red-500' key={profesion.id} >{profesion.profesion}</p>
-          )
-        })}
-        {data && data.length > 0 && data.map((aspirante) => {
-          return (
-            <p key={aspirante.dni}>{aspirante.dni}</p>
-          )
-        })}
-
-      </div> */}
     </div>
   )
 }
+{/* <div>
+{profesiones && profesiones.length > 0 && profesiones.map((profesion) => {
+    return (
+      <p className='text-red-500' key={profesion.id} >{profesion.profesion}</p>
+    )
+  })}
+  {data && data.length > 0 && data.map((aspirante) => {
+    return (
+      <p key={aspirante.dni}>{aspirante.dni}</p>
+    )
+  })}
+
+</div> */}
 
 export default App
