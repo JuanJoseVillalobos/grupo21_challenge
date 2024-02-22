@@ -13,14 +13,14 @@ function NavBar() {
 
 				<div className="user-actions">
 					<button>
-						<a href="#"><i className="bi bi-person-add"/></a>
+						<a href="/postulate"><i className="bi bi-person-add"/></a>
 					</button>
 					<button>
-						<a href="#"><i className="bi bi-person"
+						<a href="/aspirantes"><i className="bi bi-person"
 							/></a>
 					</button>
 					<button>
-						<a href="#"><i className="bi bi-box-arrow-right"
+						<a href="/"><i className="bi bi-box-arrow-right"
 							/></a>
 					</button>
 				</div>

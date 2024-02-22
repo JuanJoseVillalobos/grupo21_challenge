@@ -9,19 +9,19 @@ function CajaCostado() {
 		<>
 			<header className="menu-wrap">
 				<button>
-						<Link to='/'>
-				<figure className="user">
-					<div className="user-avatar">
-							<img src="./src/assets/images/logo-dh.png" alt="Logo Digital House	" />	
-	
-					</div>
-					<figcaption>
-						Digital House
-					</figcaption>
-				</figure>	
-						</Link>
+					<Link to='/'>
+						<figure className="user">
+							<div className="user-avatar">
+								<img src="./src/assets/images/logo-dh.png" alt="Logo Digital House	" />
+
+							</div>
+							<figcaption>
+								Digital House
+							</figcaption>
+						</figure>
+					</Link>
 				</button>
-				
+
 				<nav>
 					<section className="menu">
 						<h3>Opciones</h3>
@@ -40,20 +40,20 @@ function CajaCostado() {
 							</li>
 							<li>
 								<Link to="/profesiones">
-									<i className="bi bi-list-check"/>
+									<i className="bi bi-list-check" />
 									- Profesiones
 								</Link>
 							</li>
-						
+
 							<li>
 								<Link to="/postulate">
-									<i className="bi bi-person-vcard"/>
+									<i className="bi bi-person-vcard" />
 									- Postulate aquí
 								</Link>
 							</li>
 							<li>
 								<Link to="/contacto">
-									<i className="bi bi-chat-left-text"/>
+									<i className="bi bi-chat-left-text" />
 									- Contacto
 								</Link>
 							</li>
@@ -61,10 +61,10 @@ function CajaCostado() {
 					</section>
 				</nav>
 
-				
 
-			</header>			
-			
+
+			</header>
+
 		</>
 	);
 };
