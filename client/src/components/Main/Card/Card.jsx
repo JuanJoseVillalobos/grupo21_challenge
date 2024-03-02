@@ -12,7 +12,9 @@ import fotoGiuli from "/imgUsers/foto4.jpg"
 import fotoAylu from "/imgUsers/foto1.jpg"
 import { Button, CardActionArea, CardActions, ButtonGroup, Box } from '@mui/material';
 
-export default function MultiActionAreaCard({ profesion, nombre, apellido, index }) {
+export default function MultiActionAreaCard({ profesion, nombre, apellido, index, linkedin, numero, img }) {
+
+    console.log(img, "esto es img");
     const buttons = [
         <Button key="one"><FaRegHeart /></Button>,
         <Button key="two"><FiMessageCircle /></Button>,
@@ -20,7 +22,10 @@ export default function MultiActionAreaCard({ profesion, nombre, apellido, index
     ];
     const fotos = [fotoFran, fotoAylu, fotoGiuli, fotoJose];
     console.log(profesion, nombre, apellido, "estos son nombres y apelkidps");
+
     return (
+
+
         <div className='w-full p-2  flex flex-col justify-center items-center md:w-1/3 '>
 
 
@@ -45,7 +50,7 @@ export default function MultiActionAreaCard({ profesion, nombre, apellido, index
                     }}>
 
 
-                    <img className='w-full md:w-full' src={fotos[index]} alt={fotos[index]} />
+                    <img className='w-full md:w-full' src={`http://localhost:3030/uploads/${img}`} />
 
                     <CardContent>
                         <Typography
@@ -63,18 +68,34 @@ export default function MultiActionAreaCard({ profesion, nombre, apellido, index
                             gutterBottom variant="h5" component="div">
                             {`${nombre} ${apellido}`}
                         </Typography>
-                        <Typography
+
+                        {profesion && (<Typography
                             sx={{
 
-
                                 '@media (min-width: 600px)': {
-                                    fontSize: "20px",
+                                    fontSize: "15px",
                                 }
                             }}
                             variant="body2" color="text.secondary">
                             {profesion}
-                        </Typography>
+                        </Typography>)}
+
+                        {profesion === undefined && numero === undefined && (<a className='font-semibold text-xxs text-blue-500 md:text-sm ' target='_blank' href={linkedin}>Linkedin :D</a>)}
+
+                        {linkedin === undefined &&
+                            (<Typography
+                                sx={{
+
+                                    '@media (min-width: 600px)': {
+                                        fontSize: "15px",
+                                    }
+                                }}
+                                variant="body2" color="text.secondary">
+                                {numero}
+                            </Typography>)
+                        }
                     </CardContent>
+
                 </CardActionArea>
                 <CardActions>
                     <Box

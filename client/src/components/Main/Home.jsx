@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react'
 export default function Home() {
     const [data, setData] = useState()
     const [profesiones, setProfesiones] = useState()
+
     useEffect(() => {
         try {
             const fetchData = async () => {
@@ -23,12 +24,12 @@ export default function Home() {
 
 
     return (
-        <div className='w-8/12 md:w-full flex flex-col justify-center items-center '>
+        <div className='w-8/12 md:w-full flex flex-col justify-start items-center '>
             <Header></Header>
-            <div className='bg-gray-100 md:flex md:flex-col  '>
+            <div className='bg-gray-100 md:flex md:flex-col  animate-fade-in-down '>
 
                 <div className=' flex justify-center md:items-center flex-col items-center text-center  mt-2'>
-                    <h1 className='font-semibold text-lg md:text-start md:w-full pl-2  text-gray-400 md:text-3xl md:mt-12'>Búsqueda y selección</h1>
+                    <h1 className='font-semibold text-lg md:text-start md:w-full pl-2  text-gray-400 md:text-3xl md:mt-4'>Búsqueda y selección</h1>
                     <p className='text-start m-4 md:text-xl md:font-semibold text-sm md:m-2 text-gray-400 ' >Encontramos talento para tu empresa, en todos los cargos administrativos, profesionales y técnicos.</p>
                     <img className='w-full p-1 mt-1 md:w-full md:p-2' src="/imgUsers/banner.jpg" alt="" />
                 </div>
@@ -38,8 +39,9 @@ export default function Home() {
                 <div className='flex flex-col gap-6 md:flex-row justify-center items-center md:gap-1 flex-wrap'>
 
                     {data && data.length > 0 && data.map((aspirante, i) => {
+
                         return (
-                            <Card index={i} profesion={aspirante.profesion.profesion} nombre={aspirante.nombre} apellido={aspirante.apellido} key={aspirante.dni} />
+                            <Card index={i} img={aspirante.imagen} profesion={aspirante.profesion.profesion} nombre={aspirante.nombre} apellido={aspirante.apellido} key={aspirante.dni} />
                         )
                     })}
                 </div>
