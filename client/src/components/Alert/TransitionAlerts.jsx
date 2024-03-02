@@ -29,7 +29,7 @@ export default function TransitionAlerts({ setOpen }) {
           }
           sx={{ mb: 2 }}
         >
-          Postulacion realizada con exito !!
+          Postulacion realizada con exito !!!
         </Alert>
       </Collapse>
 
