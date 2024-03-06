@@ -10,9 +10,9 @@ export default function TransitionAlerts({ setOpen }) {
 
 
   return (
-    <Box sx={{
+    <Box className="animate-fade-in-down" sx={{
       width: '100%', position: "absolute", top: "0"
-    }}>
+    }} >
       <Collapse in={open}>
         <Alert
           action={
@@ -27,9 +27,12 @@ export default function TransitionAlerts({ setOpen }) {
               <CloseIcon fontSize="inherit" />
             </IconButton>
           }
-          sx={{ mb: 2 }}
+          sx={{ mb: 4 }}
         >
+
+
           Postulacion realizada con exito !!!
+
         </Alert>
       </Collapse>
 

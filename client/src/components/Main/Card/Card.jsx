@@ -12,16 +12,16 @@ import fotoGiuli from "/imgUsers/foto4.jpg"
 import fotoAylu from "/imgUsers/foto1.jpg"
 import { Button, CardActionArea, CardActions, ButtonGroup, Box } from '@mui/material';
 
-export default function MultiActionAreaCard({ profesion, nombre, apellido, index, linkedin, numero, img }) {
+export default function MultiActionAreaCard({ profesion, nombre, apellido, linkedin, numero, img }) {
 
-    console.log(img, "esto es img");
+
     const buttons = [
         <Button key="one"><FaRegHeart /></Button>,
         <Button key="two"><FiMessageCircle /></Button>,
         <Button key="three"><MdOutlineMail /></Button>,
     ];
-    const fotos = [fotoFran, fotoAylu, fotoGiuli, fotoJose];
-    console.log(profesion, nombre, apellido, "estos son nombres y apelkidps");
+
+
 
     return (
 

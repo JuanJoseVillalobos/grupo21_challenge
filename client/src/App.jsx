@@ -17,7 +17,8 @@ function App() {
 
 
   return (
-    <div className='flex w-full animate-impulse-rotation-left '>
+
+    <div className='flex w-full animate-impulse-rotation-left'>
       <Navbar></Navbar>
 
       <Routes>
@@ -27,7 +28,7 @@ function App() {
         <Route path='/profesiones' element={<Profesiones />} />
         <Route path='/postularse' element={<Postularse />} />
         <Route path='/contacto' element={<Contacto />} />
-        <Route path="*" element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )

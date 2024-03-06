@@ -27,7 +27,7 @@ const controller = {
             console.log(req.file);
             const profesion = await db.Profesion.findOne({
                 where: {
-                    id: req.body.profesion_id // Suponiendo que tienes un campo 'nombre' en tu modelo de Profesion
+                    id: req.body.profesion_id
                 }
             });
             const nuevoAspirante = await db.Aspirante.create({

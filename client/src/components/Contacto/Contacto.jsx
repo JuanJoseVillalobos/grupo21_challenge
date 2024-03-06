@@ -18,19 +18,19 @@ export default function Contacto() {
   console.log(data)
 
   return (
-    <div className=' w-8/12 md:w-full' >
+    <div className='w-8/12 md:w-full' >
       <Header></Header>
-      <div  className='animate-fade-in-down'>
+      <div className='animate-fade-in-down'>
 
-      <h2 className=' pl-2 text-center font-semibold text-lg text-gray-400 md:text-2xl md:text-start'>Contáctanos</h2>
+        <h2 className=' pl-2 text-center font-semibold text-lg text-gray-400 md:text-2xl md:text-start'>Contáctanos</h2>
 
-      <div className='flex flex-wrap'>
-        {data && data.length > 0 && data.map((dat, index) => {
-          return (
-            <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido} index={index} numero={dat.telefono}></Card>
-          )
-        })}
-      </div>
+        <div className='flex flex-wrap'>
+          {data && data.length > 0 && data.map((dat) => {
+            return (
+              <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido}  numero={dat.telefono}></Card>
+            )
+          })}
+        </div>
       </div>
 
     </div>

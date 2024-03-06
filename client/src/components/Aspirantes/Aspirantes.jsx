@@ -26,9 +26,9 @@ export default function Aspirantes() {
         <h2 className=' pl-2 text-center font-semibold text-lg text-gray-400 md:text-2xl md:text-start'>Aspirantes</h2>
 
         <div className='flex flex-wrap'>
-          {data && data.length > 0 && data.map((dat, index) => {
+          {data && data.length > 0 && data.map((dat) => {
             return (
-              <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido} profesion={dat.profesion.profesion} index={index}></Card>
+              <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido} profesion={dat.profesion.profesion}></Card>
             )
           })}
         </div>

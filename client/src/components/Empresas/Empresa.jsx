@@ -21,14 +21,14 @@ export default function Empresa() {
     <div className=' w-8/12 md:w-full' >
       <Header></Header>
 
-      <div  className='animate-fade-in-down'>
+      <div className='animate-fade-in-down'>
 
         <h2 className=' pl-2 text-center font-semibold text-lg text-gray-400 md:text-2xl md:text-start'>Url´s de Linkedin</h2>
 
         <div className='flex flex-wrap'>
-          {data && data.length > 0 && data.map((dat, index) => {
+          {data && data.length > 0 && data.map((dat) => {
             return (
-              <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido} linkedin={dat.url_linkedin} index={index}></Card>
+              <Card img={dat.imagen} key={dat.dni} nombre={dat.nombre} apellido={dat.apellido} linkedin={dat.url_linkedin} ></Card>
             )
           })}
         </div>

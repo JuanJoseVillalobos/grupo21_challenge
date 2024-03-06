@@ -16,7 +16,7 @@ export default function Profesiones() {
 
   console.log(data)
   return (
-    <div className='w-8/12 md:w-full  '  >
+    <div className='w-8/12 md:w-full '  >
       <Header />
       <div className='animate-fade-in-down'>
 
